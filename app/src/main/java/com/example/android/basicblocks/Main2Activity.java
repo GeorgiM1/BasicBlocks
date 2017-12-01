@@ -88,7 +88,7 @@ public class Main2Activity extends AppCompatActivity {
                 user.setMale(true);
             } else user.setMale(false);
             if (femaleButton.isChecked()) {
-                user.setMale(false);
+                user.setMale(true);
             } else user.setMale(true);
             Intent addUse = new Intent(this, Main3Activity.class);
             addUse.putExtra("ADD_USER", user);
