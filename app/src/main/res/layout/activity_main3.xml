@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.android.basicblocks.Main3Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        >
+        <Spinner
+            android:prompt="@string/spinnerPrompt"
+            android:id="@+id/editGuestSpinner"
+            android:layout_width="220dp"
+            android:layout_height="60dp"
+            android:background="@color/white"/>
+        <Button
+            android:id="@+id/btnEditUser"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/colorAccent"
+            android:text="EDIT USER"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="end"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp">
+        <Button
+            android:id="@+id/btnAddUser"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/colorAccent"
+            android:text="ADD USER"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="130dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change Gender"/>
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/genderFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="F"
+                android:textColor="@color/green_w_alpha"
+                android:textStyle="bold"/>
+            <RadioButton
+                android:id="@+id/genderMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M"
+                android:textColor="@color/green_w_alpha"
+                android:textStyle="bold"/>
+        </RadioGroup>
+        <ImageView
+            android:id="@+id/imgSex"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/man"
+            android:layout_marginLeft="75dp"/>
+
+        <TextView
+            android:id="@+id/imeIprezime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/radioGroup"
+            android:text="ime i prezime" />
+        <Button
+            android:id="@+id/check_internet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="CHECK INTERNET CONNECTION"
+            android:background="@color/colorAccent"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:hint="Check internet? "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/radioGroup"
+            android:layout_above="@+id/check_internet"
+            android:layout_marginStart="12dp"
+            android:text="TextView" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

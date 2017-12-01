@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">BasicBlocks</string>
+    <string name="loginGuest">Login as Guest</string>
+    <string name="addTxt">ADD USER DETAILS :</string>
+    <string name="gndr">GENDER :</string>
+    <string name="spinnerPrompt">Choose User</string>
+    <string name="checkInternetCon">Check internet connection</string>
+
+    <string-array name="user">
+        <item>user1</item>
+        <item>user2</item>
+        <item>user3</item>
+    </string-array>
+</resources>
